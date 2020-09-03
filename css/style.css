@@ -1,0 +1,278 @@
+html, body, p, h1, h2, h3, h4, ul, article, figure {
+  padding: 0;
+  margin: 0;
+  font-weight: normal; }
+
+body {
+  line-height: 1.2;
+  font-size: 18px;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "futura"; }
+
+a {
+  color: inherit; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.btn {
+  border: none; }
+
+a,
+.btn,
+button,
+button:before,
+button:after {
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  outline: none; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+.btn,
+input,
+textarea,
+button,
+.slick-slide {
+  font-family: "futura";
+  outline: none; }
+
+.participants-rating__container {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  height: 100%; }
+
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura-pt-medium.eot");
+  src: url("../fonts/futura-pt-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-pt-bold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura-pt-book.eot");
+  src: url("../fonts/futura-pt-book.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-pt-book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura-pt-demi.eot");
+  src: url("../fonts/futura-pt-demi.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-pt-demi.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+.header {
+  padding: 32px 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.participants-rating {
+  padding-bottom: 75px;
+  font-size: 18px; }
+  .participants-rating__title {
+    padding-bottom: 27px;
+    color: #ff4527;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center; }
+  .participants-rating__form {
+    width: 750px;
+    max-width: 100%;
+    margin: 0 auto 11px;
+    position: relative;
+    z-index: 3; }
+    .participants-rating__form input {
+      width: 100%;
+      display: block;
+      height: 48px;
+      -webkit-box-shadow: inset 0 3px 4px rgba(194, 194, 194, 0.09);
+              box-shadow: inset 0 3px 4px rgba(194, 194, 194, 0.09);
+      border-radius: 4px;
+      border: 1px solid #e5e5e5;
+      background-color: #ffffff;
+      padding-left: 53px;
+      background-image: url("../img/search.png");
+      background-repeat: no-repeat;
+      background-position: center left 19px;
+      font-size: 20px;
+      font-weight: 600; }
+  .participants-rating__result-search {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    -webkit-box-shadow: inset 0 3px 4px rgba(194, 194, 194, 0.09);
+            box-shadow: inset 0 3px 4px rgba(194, 194, 194, 0.09);
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    margin-top: 5px;
+    padding: 15px 0; }
+    .participants-rating__result-search li {
+      padding: 5px 25px 5px 53px;
+      color: #696969;
+      font-weight: 600;
+      font-size: 20px;
+      cursor: pointer; }
+      .participants-rating__result-search li:hover {
+        background: #e5e5e5; }
+  .participants-rating__table {
+    margin-bottom: 45px;
+    padding-bottom: 20px; }
+    .participants-rating__table table {
+      border-collapse: collapse;
+      width: 100%; }
+    .participants-rating__table td {
+      padding: 18px 30px 18px 0; }
+      .participants-rating__table td:first-child {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 60px; }
+      .participants-rating__table td:nth-child(2) {
+        min-width: 407px;
+        padding-right: 25px; }
+      .participants-rating__table td:nth-child(3) {
+        min-width: 125px; }
+      .participants-rating__table td:nth-child(4) {
+        min-width: 230px; }
+      .participants-rating__table td:nth-child(5) {
+        width: 75px;
+        padding-left: 15px; }
+    .participants-rating__table thead {
+      vertical-align: bottom; }
+      .participants-rating__table thead td {
+        color: #aaaaaa;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 12px; }
+    .participants-rating__table tbody td {
+      font-weight: 600;
+      letter-spacing: -0.035em;
+      color: #4c4c4c; }
+      .participants-rating__table tbody td:first-child {
+        border-radius: 4px 0 0 4px; }
+      .participants-rating__table tbody td:last-child {
+        border-radius: 0 4px 4px 0;
+        color: #ff4527; }
+    .participants-rating__table tbody tr:nth-child(odd) td {
+      background-color: #f7f7f7; }
+  .participants-rating__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #595959;
+    font-size: 12px;
+    color: #595959; }
+    .participants-rating__pagination ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .participants-rating__pagination ul li {
+        margin: 0 10px; }
+      .participants-rating__pagination ul a,
+      .participants-rating__pagination ul span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 9px; }
+      .participants-rating__pagination ul a:hover {
+        background: #ebebeb; }
+      .participants-rating__pagination ul span {
+        background-color: #dd9a65;
+        color: #ffffff; }
+
+@media screen and (max-width: 940px) {
+  .participants-rating__container {
+    width: 740px; }
+  .participants-rating__table td:nth-child(3), .participants-rating__table td:nth-child(4) {
+    display: none; }
+  .participants-rating__title {
+    font-size: 36px; } }
+@media screen and (max-width: 750px) {
+  .participants-rating__container {
+    width: 540px; }
+  .participants-rating__title {
+    font-size: 28px; }
+  .participants-rating__table td:nth-child(2) {
+    min-width: auto; }
+  .participants-rating__pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .participants-rating__pagination > a {
+      display: none; } }
+@media screen and (max-width: 550px) {
+  .participants-rating {
+    font-size: 16px;
+    padding-bottom: 50px; }
+    .participants-rating__container {
+      width: 440px; }
+    .participants-rating__title {
+      font-size: 24px;
+      line-height: 1.2; }
+    .participants-rating__form input {
+      font-size: 16px;
+      padding-left: 50px; }
+    .participants-rating__result-search {
+      padding: 10px 0; }
+      .participants-rating__result-search li {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 15px; }
+    .participants-rating__table {
+      margin-bottom: 20px; }
+      .participants-rating__table td:first-child {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 40px; }
+      .participants-rating__table td:last-child {
+        padding-right: 15px; } }
+@media screen and (max-width: 450px) {
+  .participants-rating {
+    font-size: 14px; }
+    .participants-rating__pagination ul li {
+      margin-left: 4px;
+      margin-right: 4px; }
+    .participants-rating__container {
+      width: 100%;
+      padding-left: 4%;
+      padding-right: 4%; }
+    .participants-rating__table thead td {
+      font-size: 12px; }
+      .participants-rating__table thead td:last-child {
+        padding-right: 5px; } }
+
+/*# sourceMappingURL=style.css.map */
